@@ -15,7 +15,7 @@ function getCountdownTime() {
   let daysLeft = Math.floor(timeDistance / day);
   let hoursLeft = Math.floor((timeDistance % day) / hour);
   let minutesLeft = Math.floor((timeDistance % hour) / min);
-  let secondsLeft = Math.floor((timeDistance % hour) / 1000);
+  let secondsLeft = Math.floor((timeDistance % min) / 1000);
 
   const values = [daysLeft, hoursLeft, minutesLeft, secondsLeft];
   items.forEach((item, index) => {
